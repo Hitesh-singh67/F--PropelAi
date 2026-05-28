@@ -1,0 +1,42 @@
+[
+  {
+    "email": "user@gmail.com",
+    "joined_at": "2026-05-28T12:41:00Z"
+  },
+  {
+    "email": "test3@example.com",
+    "timestamp": "2026-05-27T19:17:07.258Z"
+  },
+  {
+    "email": "sheetdb_test@example.com",
+    "timestamp": "2026-05-27T19:40:43.531Z"
+  },
+  {
+    "email": "anshusingh07@gmail.com",
+    "timestamp": "2026-05-27T19:45:12.846Z"
+  },
+  {
+    "email": "hiteshkumarsingh6395@gmail.com",
+    "timestamp": "2026-05-27T19:46:19.140Z"
+  },
+  {
+    "email": "new_sheet_test@example.com",
+    "timestamp": "2026-05-28T04:12:54.474Z"
+  },
+  {
+    "email": "clean_db_test@example.com",
+    "timestamp": "2026-05-28T04:14:08.377Z"
+  },
+  {
+    "email": "singhakansha000000@gmail.com",
+    "timestamp": "2026-05-28T04:35:09.655Z"
+  },
+  {
+    "email": "muneendrapal1972@gmail.com",
+    "timestamp": "2026-05-28T04:35:28.475Z"
+  },
+  {
+    "email": "cleanup_test@example.com",
+    "timestamp": "2026-05-28T05:34:30.961Z"
+  }
+]

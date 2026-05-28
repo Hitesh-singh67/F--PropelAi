@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PropelAI — Real Estate Intelligence Platform</title>
+  <meta name="description" content="AI-powered intelligence infrastructure for India's real estate ecosystem. Discover predictive analytics, property scoring, and fractional infrastructure.">
+  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-mark">P</div>
+        PropelAI
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#market">Market</a></li>
+        <li><a href="#compare">Why Us</a></li>
+        <li><a href="#funding">Funding</a></li>
+        <li><a href="#contact" class="nav-cta">Request Access</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- LIVE TICKER -->
+  <div class="ticker">
+    <div class="ticker-label">LIVE</div>
+    <div style="overflow:hidden; flex:1;">
+      <div class="ticker-track">
+        <span class="ticker-item">DLF Sector 54, Gurugram <span>₹18,400/sqft ▲2.1%</span></span>
+        <span class="ticker-item">Noida Expressway <span>₹9,800/sqft ▲3.7%</span></span>
+        <span class="ticker-item">Dwarka Expressway <span>₹11,200/sqft ▲1.9%</span></span>
+        <span class="ticker-item">South Delhi Premium <span>₹34,000/sqft ▲0.8%</span></span>
+        <span class="ticker-item">Bengaluru Whitefield <span>₹8,600/sqft ▲4.2%</span></span>
+        <span class="ticker-item">Mumbai BKC <span>₹52,000/sqft <span class="neg">▼0.3%</span></span></span>
+        <span class="ticker-item">Hyderabad HITEC City <span>₹9,100/sqft ▲5.1%</span></span>
+        <span class="ticker-item">PropelAI Score Index <span>847 pts ▲12</span></span>
+        <!-- Repeat items for infinite loop -->
+        <span class="ticker-item">DLF Sector 54, Gurugram <span>₹18,400/sqft ▲2.1%</span></span>
+        <span class="ticker-item">Noida Expressway <span>₹9,800/sqft ▲3.7%</span></span>
+        <span class="ticker-item">Dwarka Expressway <span>₹11,200/sqft ▲1.9%</span></span>
+        <span class="ticker-item">South Delhi Premium <span>₹34,000/sqft ▲0.8%</span></span>
+        <span class="ticker-item">Bengaluru Whitefield <span>₹8,600/sqft ▲4.2%</span></span>
+        <span class="ticker-item">Mumbai BKC <span>₹52,000/sqft <span class="neg">▼0.3%</span></span></span>
+        <span class="ticker-item">Hyderabad HITEC City <span>₹9,100/sqft ▲5.1%</span></span>
+        <span class="ticker-item">PropelAI Score Index <span>847 pts ▲12</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HERO SECTION -->
+  <section class="hero" id="hero">
+    <div id="hero-canvas-container" class="hero-bg-canvas"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left content -->
+        <div class="hero-content">
+          <div class="hero-eyebrow">Pre-Seed · Gurugram, India</div>
+          <h1>The Bloomberg<br><em>Terminal</em><br>for Real Estate.</h1>
+          <p class="hero-sub">
+            AI-powered intelligence infrastructure for India's real estate ecosystem — property scoring, predictive analytics, builder SaaS, and institutional-grade market intelligence.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">Request Access <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#products" class="btn-secondary">Explore Suite</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-val">₹50T+</span>
+              <span class="stat-label">India RE TAM</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">5x</span>
+              <span class="stat-label">AI Adoption</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">3M+</span>
+              <span class="stat-label">Target Users</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right panels -->
+        <div class="hero-panels">
+          <!-- System status -->
+          <div class="glass-panel">
+            <div class="panel-header">
+              <h3 class="panel-title"><i class="fa-solid fa-server"></i> PROPELAI | SYSTEM STATUS</h3>
+              <span class="panel-badge">SECURE</span>
+            </div>
+            <div class="system-status-list" id="status-logs-list">
+              <!-- Logs populated dynamically -->
+            </div>
+          </div>
+
+          <!-- AI score gauge -->
+          <div class="glass-panel">
+            <div class="panel-header">
+              <h3 class="panel-title"><i class="fa-solid fa-brain"></i> AI PROPERTY SCORE</h3>
+              <span class="panel-badge">GURUGRAM CORE</span>
+            </div>
+            <div class="score-gauge-container">
+              <div class="circular-gauge">
+                <svg class="gauge-svg">
+                  <defs>
+                    <linearGradient id="cyan-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#22d3ee" />
+                      <stop offset="100%" stop-color="#6366f1" />
+                    </linearGradient>
+                  </defs>
+                  <circle class="gauge-bg" cx="50" cy="50" r="40"></circle>
+                  <circle class="gauge-fill" cx="50" cy="50" r="40"></circle>
+                </svg>
+                <div class="gauge-txt">
+                  <span class="gauge-num">82.4</span>
+                  <span class="gauge-lbl">SCORE</span>
+                </div>
+              </div>
+              <div class="score-details">
+                <div class="detail-box">
+                  <div class="detail-lbl">Yield Index</div>
+                  <div class="detail-val">8.42%</div>
+                </div>
+                <div class="detail-box">
+                  <div class="detail-lbl">Location</div>
+                  <div class="detail-val">1.82</div>
+                </div>
+                <div class="detail-box">
+                  <div class="detail-lbl">Risk Cap</div>
+                  <div class="detail-val" style="color: #10b981;">LOW</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE PROBLEM SECTION -->
+  <section class="problem" id="problem">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow"><i class="fa-solid fa-triangle-exclamation"></i> Systemic Deficiencies</div>
+        <h2 class="section-title">India's ₹50T real estate market<br>runs on WhatsApp groups.</h2>
+        <div class="section-desc">Current Landscape Vulnerabilities & Transparency Debts</div>
+      </div>
+
+      <div class="problem-grid">
+        <!-- Card 1 -->
+        <div class="glass-panel problem-card">
+          <div class="card-top">
+            <span class="card-meta">VULN_INDEX // ERR_01</span>
+            <div class="card-icon cyan"><i class="fa-solid fa-eye-slash"></i></div>
+          </div>
+          <h4>Zero Transparency</h4>
+          <p>Fake listings, unverified brokers, and opaque pricing leave buyers exposed to extreme transactional risk.</p>
+          <div class="risk-level-container">
+            <span class="risk-lbl">SEVERITY LEVEL // HIGH</span>
+            <div class="risk-bar"><div class="risk-fill red" style="width: 85%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-panel problem-card">
+          <div class="card-top">
+            <span class="card-meta">VULN_INDEX // ERR_02</span>
+            <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+          </div>
+          <h4>No Intelligence Layer</h4>
+          <p>Lack of real-time machine learning valuation indices or analytical parameters at the deal-making level.</p>
+          <div class="risk-level-container">
+            <span class="risk-lbl">SEVERITY LEVEL // CRITICAL</span>
+            <div class="risk-bar"><div class="risk-fill red" style="width: 95%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-panel problem-card">
+          <div class="card-top">
+            <span class="card-meta">VULN_INDEX // ERR_03</span>
+            <div class="card-icon cyan"><i class="fa-solid fa-hourglass-half"></i></div>
+          </div>
+          <h4>Manual Workflows</h4>
+          <p>Property registration, title checks, and developer credibility diligence are manual, slow, and expensive.</p>
+          <div class="risk-level-container">
+            <span class="risk-lbl">SEVERITY LEVEL // MODERATE</span>
+            <div class="risk-bar"><div class="risk-fill amber" style="width: 60%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="glass-panel problem-card">
+          <div class="card-top">
+            <span class="card-meta">VULN_INDEX // ERR_04</span>
+            <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+          </div>
+          <h4>Disconnected Data</h4>
+          <p>Critical transaction history, registration fees, and GIS layers sit in disconnected municipal silos.</p>
+          <div class="risk-level-container">
+            <span class="risk-lbl">SEVERITY LEVEL // CRITICAL</span>
+            <div class="risk-bar"><div class="risk-fill red" style="width: 90%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="glass-panel problem-card">
+          <div class="card-top">
+            <span class="card-meta">VULN_INDEX // ERR_05</span>
+            <div class="card-icon cyan"><i class="fa-solid fa-chart-line"></i></div>
+          </div>
+          <h4>Weak Lead Capture</h4>
+          <p>Developers spend millions on ad networks but lack predictive insights to filter and target high-intent buyers.</p>
+          <div class="risk-level-container">
+            <span class="risk-lbl">SEVERITY LEVEL // HIGH</span>
+            <div class="risk-bar"><div class="risk-fill red" style="width: 75%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="glass-panel problem-card">
+          <div class="card-top">
+            <span class="card-meta">VULN_INDEX // ERR_06</span>
+            <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          </div>
+          <h4>Security Gaps</h4>
+          <p>Gated housing complexes and builder estates lack unified verification and secure transit logs.</p>
+          <div class="risk-level-container">
+            <span class="risk-lbl">SEVERITY LEVEL // MODERATE</span>
+            <div class="risk-bar"><div class="risk-fill amber" style="width: 65%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENTO BOX PRODUCT SUITE -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow"><i class="fa-solid fa-cubes"></i> The Product Suite</div>
+        <h2 class="section-title">Five pillars of real estate intelligence.</h2>
+        <div class="section-desc">An Integrated Ecosystem — Not Another Listing Portal</div>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Bento 1: Flagship Terminal (Vertical Card) -->
+        <div class="glass-panel bento-card flagship-card">
+          <div class="bento-card-header">
+            <span><i class="fa-solid fa-terminal"></i> PROPEL TERMINAL: FLAGSHIP</span>
+            <span style="color: #10b981; font-weight: 700;">ACTIVE NODE</span>
+          </div>
+          <div class="flagship-body">
+            <div class="flagship-val-wrap">
+              <span class="flagship-val">82.4</span>
+              <span class="flagship-val-lbl">TELEMETRY SCORE INDEX</span>
+            </div>
+            <p>Enterprise command center delivering real-time pricing corridors, builder analytics, transit accessibility indexes, and local policy monitoring.</p>
+            <div class="flagship-meta">DEVICE: PROPEL_TERM_V6.4 // ACTIVE</div>
+            <button class="flagship-btn" onclick="alert('Launching Command Center Console...')">LAUNCH TELEMETRY</button>
+          </div>
+        </div>
+
+        <!-- Bento 2: Scoring Engine -->
+        <div class="glass-panel bento-card">
+          <div class="bento-card-header">
+            <span><i class="fa-solid fa-gears"></i> SCORING ENGINE</span>
+            <span class="panel-badge">SECURE</span>
+          </div>
+          <div class="bento-body">
+            <p>Evaluates rental yield thresholds, builder litigation files, zoning approvals, and locational accessibility quotients.</p>
+            <div class="progress-container">
+              <span class="progress-lbl">ORACLE CALIBRATION // 82.4%</span>
+              <div class="progress-bar"><div class="progress-fill"></div></div>
+            </div>
+            <div class="bento-console">
+              <span class="cmd">&gt; GET /score/sector-54</span>
+              <span class="res" id="console-result">{ "status": "200 OK", "score": 82.4 }</span>
+            </div>
+            <button class="bento-btn" id="query-engine-btn">Query Engine</button>
+          </div>
+        </div>
+
+        <!-- Bento 3: GeoFence Security -->
+        <div class="glass-panel bento-card">
+          <div class="bento-card-header">
+            <span><i class="fa-solid fa-draw-polygon"></i> GEOFENCE SECURITY</span>
+          </div>
+          <div class="geofence-inner">
+            <div class="zkp-badge">
+              <i class="fa-solid fa-fingerprint"></i>
+              ZKP SECURE
+            </div>
+            <p style="text-align: center; font-size: 13px;">Visitor logs and spatial secure keys for modern societies.</p>
+            <div class="coord-display">
+              <span>LAT: 28.3800</span>
+              <span>LNG: 76.9000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento 4: Builder SaaS (Double Width) -->
+        <div class="glass-panel bento-card double-width">
+          <div class="bento-card-header">
+            <span><i class="fa-solid fa-network-wired"></i> BUILDER SAAS</span>
+            <span class="panel-badge" style="background: rgba(99,102,241,0.1); color: var(--accent2); border-color: rgba(99,102,241,0.2);">ACTIVE</span>
+          </div>
+          <div class="bento-body">
+            <p>Predictive CRM, lead sorting engine, inventory status flow, and smart demand forecasts.</p>
+            <div class="ledger-list" id="builder-logs-list">
+              <!-- Logs populated dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento 5: Digital RE Infrastructure (Double Width) -->
+        <div class="glass-panel bento-card double-width">
+          <div class="bento-card-header">
+            <span><i class="fa-solid fa-link"></i> DIGITAL RE INFRASTRUCTURE</span>
+            <span class="panel-badge">ROADMAP</span>
+          </div>
+          <div class="infra-content">
+            <p style="max-width: 60%;">Fractional participation layers and smart tokens for property micro-shares, enabling institutional-grade liquidity pools.</p>
+            <div class="token-badge">
+              <span class="token-lbl">SMART TOKEN DEPLOYED</span>
+              <div class="token-val">10M+ SHARES</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REAL ESTATE NEWS INTEL SECTION -->
+  <section class="news" id="news">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow"><i class="fa-solid fa-newspaper"></i> Market Intel Feed</div>
+        <h2 class="section-title">Indian Real Estate News & Intelligence.</h2>
+        <div class="section-desc">Real-time alerts, policy transitions, and regional corridors monitoring</div>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="news-filters">
+        <button id="filter-btn-all" class="filter-btn active" data-filter="all">All Intel</button>
+        <button id="filter-btn-infra" class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+        <button id="filter-btn-policy" class="filter-btn" data-filter="policy">Policy & Finance</button>
+        <button id="filter-btn-trends" class="filter-btn" data-filter="trends">Market Trends</button>
+      </div>
+
+      <!-- News Grid -->
+      <div class="news-grid">
+        <!-- Article 1 -->
+        <div class="glass-panel news-card" data-category="infrastructure">
+          <div class="news-img-container">
+            <img src="news_dwarka.png" alt="Dwarka Expressway Corridors" class="news-img">
+            <span class="news-tag infra-tag">Infrastructure</span>
+          </div>
+          <div class="news-content-wrap">
+            <div class="news-meta">
+              <span><i class="fa-regular fa-calendar"></i> May 28, 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 3 min read</span>
+            </div>
+            <h4>Dwarka Expressway Operational Sync Drives Corridors Valuation Index</h4>
+            <p>Property pricing across Gurugram Sector 109 and Sector 113 recorded a 14.8% upward revision following full connectivity integration.</p>
+            <a href="#" class="news-link" onclick="alert('Opening Intel Report...')">Read Full Feed <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="glass-panel news-card" data-category="policy">
+          <div class="news-img-container">
+            <img src="news_reit.png" alt="SEBI REIT Regulations" class="news-img">
+            <span class="news-tag policy-tag">Policy & Finance</span>
+          </div>
+          <div class="news-content-wrap">
+            <div class="news-meta">
+              <span><i class="fa-regular fa-calendar"></i> May 24, 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+            </div>
+            <h4>SEBI Modifies Fractional Ownership Rules for Real Estate Tokenization</h4>
+            <p>New regulatory frameworks lower the minimum ticket size for fractional assets, allowing retail investment syndicates to join premium commercial REIT pools.</p>
+            <a href="#" class="news-link" onclick="alert('Opening Intel Report...')">Read Full Feed <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="glass-panel news-card" data-category="trends">
+          <div class="news-img-container">
+            <img src="news_luxury.png" alt="Luxury Condo Pre-Launch" class="news-img">
+            <span class="news-tag trends-tag">Market Trends</span>
+          </div>
+          <div class="news-content-wrap">
+            <div class="news-meta">
+              <span><i class="fa-regular fa-calendar"></i> May 19, 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 2 min read</span>
+            </div>
+            <h4>Pre-Launch Inflow of ₹8,000 Cr Locked in Gurugram Sector 54</h4>
+            <p>Luxury residential units lock in unprecedented institutional booking volumes within 72 hours, highlighting robust demand in Golf Course Extension premium corridors.</p>
+            <a href="#" class="news-link" onclick="alert('Opening Intel Report...')">Read Full Feed <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GO-TO-MARKET MILESTONES -->
+  <section class="market" id="market">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow"><i class="fa-solid fa-rocket"></i> TARGETED MILESTONES</div>
+        <h2 class="section-title">Starting in Gurugram. Scaling to India.</h2>
+        <div class="section-desc">Phased Expansion Targeting High-Value Commercial & Residential Clusters</div>
+      </div>
+
+      <div class="market-grid">
+        <div class="phases-list">
+          <!-- Phase 1 -->
+          <div class="phase-card">
+            <div class="phase-num">P1</div>
+            <div class="phase-info">
+              <h4>Gurugram Focus</h4>
+              <p>Onboarding tier-1 builders, premium brokers, and institutional capital in India's most transactional real estate city.</p>
+            </div>
+          </div>
+          <!-- Phase 2 -->
+          <div class="phase-card">
+            <div class="phase-num">P2</div>
+            <div class="phase-info">
+              <h4>NCR Expansion</h4>
+              <p>Expanding analytics infrastructure to Noida Expressway, Dwarka Expressway corridor, South Delhi, and Faridabad.</p>
+            </div>
+          </div>
+          <!-- Phase 3 -->
+          <div class="phase-card">
+            <div class="phase-num">P3</div>
+            <div class="phase-info">
+              <h4>Pan-India Rollout</h4>
+              <p>Deploying portals across tier-1 investment metros including Bengaluru, Mumbai, Pune, and Hyderabad.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Market statistics -->
+        <div class="market-stats">
+          <div class="glass-panel m-stat-card">
+            <div class="m-stat-val">₹50T+</div>
+            <div class="m-stat-lbl">India Real Estate Market</div>
+          </div>
+          <div class="glass-panel m-stat-card">
+            <div class="m-stat-val">₹12T</div>
+            <div class="m-stat-lbl">Top-4 Metro cities TAM</div>
+          </div>
+          <div class="glass-panel m-stat-card">
+            <div class="m-stat-val">3M+</div>
+            <div class="m-stat-lbl">Target Investors</div>
+          </div>
+          <div class="glass-panel m-stat-card font-mono">
+            <div class="m-stat-val" style="color: var(--accent);">6–9mo</div>
+            <div class="m-stat-lbl">MVP Live Deployment</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON MATRIX -->
+  <section class="compare" id="compare">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow"><i class="fa-solid fa-code-compare"></i> MARKET STANDARDS</div>
+        <h2 class="section-title">Built for decisions, not discovery.</h2>
+        <div class="section-desc">PropelAI vs Traditional Indian Real Estate Aggregators</div>
+      </div>
+
+      <div class="table-wrapper glass-panel" style="padding:0;">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th class="feature-col">Feature Matrix</th>
+              <th>99acres / MB</th>
+              <th>NoBroker</th>
+              <th class="highlight-col">PropelAI ✦</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-col"><span class="table-idx">MAT-01</span> Property Listings Discovery</td>
+              <td><i class="fa-solid fa-circle-check check-icon"></i></td>
+              <td><i class="fa-solid fa-circle-check check-icon"></i></td>
+              <td class="highlight-col"><i class="fa-solid fa-circle-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="feature-col"><span class="table-idx">MAT-02</span> AI Property Appraisals</td>
+              <td><i class="fa-solid fa-circle-xmark cross-icon"></i></td>
+              <td><i class="fa-solid fa-circle-xmark cross-icon"></i></td>
+              <td class="highlight-col"><i class="fa-solid fa-circle-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="feature-col"><span class="table-idx">MAT-03</span> Predictive Appreciation Index</td>
+              <td><i class="fa-solid fa-circle-xmark cross-icon"></i></td>
+              <td><i class="fa-solid fa-circle-xmark cross-icon"></i></td>
+              <td class="highlight-col"><i class="fa-solid fa-circle-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="feature-col"><span class="table-idx">MAT-04</span> Builder Intelligence SaaS</td>
+              <td><span class="amber-txt">Basic CRM</span></td>
+              <td><i class="fa-solid fa-circle-xmark cross-icon"></i></td>
+              <td class="highlight-col"><i class="fa-solid fa-circle-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="feature-col"><span class="table-idx">MAT-05</span> Institutional Telemetry API</td>
+              <td><i class="fa-solid fa-circle-xmark cross-icon"></i></td>
+              <td><i class="fa-solid fa-circle-xmark cross-icon"></i></td>
+              <td class="highlight-col"><i class="fa-solid fa-circle-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="feature-col"><span class="table-idx">MAT-06</span> GeoFence Security Logs</td>
+              <td><i class="fa-solid fa-circle-xmark cross-icon"></i></td>
+              <td><i class="fa-solid fa-circle-xmark cross-icon"></i></td>
+              <td class="highlight-col"><i class="fa-solid fa-circle-check check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="feature-col"><span class="table-idx">MAT-07</span> Fractional Ownership Layer</td>
+              <td><i class="fa-solid fa-circle-xmark cross-icon"></i></td>
+              <td><i class="fa-solid fa-circle-xmark cross-icon"></i></td>
+              <td class="highlight-col"><span class="check-icon">ROADMAP</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNDING ROUND MILSTONES -->
+  <section class="funding" id="funding">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow"><i class="fa-solid fa-sack-dollar"></i> ROUND OPEN</div>
+        <h2 class="section-title">Pre-Seed Funding Target.</h2>
+        <div class="section-desc">Strategic Capital For Engineering and Initial Regional Launch</div>
+      </div>
+
+      <div class="funding-grid">
+        <!-- Card 1 -->
+        <div class="glass-panel funding-card">
+          <span class="fund-meta">PHASE 01 // ALLOC: 25%</span>
+          <div class="fund-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h5>MVP Development</h5>
+          <p>Finalizing telemetry client architecture, spatial mapping layers, and scoring parameters.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-panel funding-card">
+          <span class="fund-meta">PHASE 02 // ALLOC: 30%</span>
+          <div class="fund-icon"><i class="fa-solid fa-users-gear"></i></div>
+          <h5>Engineering Hires</h5>
+          <p>Assembling core team of data scientists, platform developers, and spatial design experts.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-panel funding-card">
+          <span class="fund-meta">PHASE 03 // ALLOC: 25%</span>
+          <div class="fund-icon"><i class="fa-solid fa-database"></i></div>
+          <h5>Data Sourcing</h5>
+          <p>Acquiring institutional historical prices, transit planning data, and builder registry archives.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="glass-panel funding-card">
+          <span class="fund-meta">PHASE 04 // ALLOC: 20%</span>
+          <div class="fund-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <h5>Builder Partnerships</h5>
+          <p>Pilot integrations with Gurugram commercial developers and luxury residential chains.</p>
+        </div>
+      </div>
+
+      <div class="funding-actions">
+        <button class="btn-primary" id="connect-founders-btn">Connect with Founders</button>
+        <a href="https://docs.google.com/presentation/d/e/2PACX-1vTqYR4xJsDYuPLPS5ib-h-yL88tr2CqL2dKOl_0rkI0T-LWb53hH3AwCFMH_8Pju1CRAde2MWHDHezn/pub?start=false&loop=false&delayms=3000" target="_blank" class="btn-secondary"><i class="fa-solid fa-display"></i> View Pitch Deck</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA WAITLIST SECTION -->
+  <section class="cta" id="contact">
+    <div class="cta-glow"></div>
+    <div class="container">
+      <div class="cta-box">
+        <div class="section-eyebrow" style="color: var(--accent);"><i class="fa-solid fa-key"></i> EARLY ACCESS</div>
+        <h2>The intelligence layer<br><em>India's real estate needs.</em></h2>
+        <p>Subscribe for updates and waitlist requests for the Propel Terminal launch. Builders, institutional investors, and operators welcome.</p>
+        
+        <!-- Updated waitlist forms pointing to Node backend -->
+        <form class="waitlist-form" id="waitlist-form-node">
+          <input type="email" class="waitlist-input" id="waitlist-email-input" placeholder="your@email.com" required>
+          <button type="submit" class="waitlist-btn">JOIN WAITLIST</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">© 2026 PropelAI Technologies Pvt. Ltd. · Gurugram, India</span>
+        <div class="footer-badge">
+          <span class="badge-dot"></span>
+          Pre-Seed · Actively Fundraising
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Support Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FOUNDERS CONNECT MODAL -->
+  <div id="founders-modal" class="modal-overlay">
+    <div class="modal-content glass-panel" style="max-width: 520px;">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-comments"></i> CONNECT WITH FOUNDERS</h3>
+        <button class="modal-close-btn" id="close-modal-btn">&times;</button>
+      </div>
+
+      <!-- Message Form -->
+      <form class="modal-form" id="connect-founders-form">
+        <div class="form-group">
+          <label for="founder-name-input">Your Name</label>
+          <input type="text" id="founder-name-input" placeholder="e.g. Hitesh" required>
+        </div>
+        <div class="form-group">
+          <label for="founder-email-input">Your Email</label>
+          <input type="email" id="founder-email-input" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="founder-message-input">Message</label>
+          <textarea id="founder-message-input" rows="4" placeholder="Let's build together..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="justify-content: center; width: 100%; border: none; cursor: pointer; margin-top: 8px;">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+
+      <!-- Success State -->
+      <div class="modal-success-state" id="connect-founders-success" style="display: none;">
+        <i class="fa-solid fa-circle-check success-icon"></i>
+        <h4>Message Sent!</h4>
+        <p>Thanks for reaching out. The founders will get in touch with you shortly.</p>
+        <button class="btn-secondary" id="success-close-btn" style="margin-top: 16px; cursor: pointer; border: 1px solid var(--border);">Close</button>
+      </div>
+
+      <!-- Direct Connection Links -->
+      <div class="modal-founders-direct" style="margin-top: 24px; border-top: 1px solid var(--border); padding-top: 20px;">
+        <div class="founder-direct-title" style="margin-bottom: 12px;">Or Connect Directly</div>
+        <div class="founders-grid">
+          <!-- Founder 1 -->
+          <div class="founder-card">
+            <div class="founder-name">Anurag</div>
+            <div class="founder-bio">Real estate and finance background with deep understanding of property markets, builder ecosystems, and investment dynamics across India.</div>
+            <div class="founder-actions">
+              <a href="https://www.linkedin.com/in/propelai-tech-b79264377?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="founder-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Ceopropelai@propelai.tech" target="_blank" class="founder-link"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
+          </div>
+          <!-- Founder 2 -->
+          <div class="founder-card">
+            <div class="founder-name">Hitesh</div>
+            <div class="founder-bio">Technology and product development expert focused on AI systems, analytics infrastructure, platform engineering, and scalable architecture.</div>
+            <div class="founder-actions">
+              <a href="https://www.linkedin.com/in/hitesh-singh67" target="_blank" class="founder-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hiteshkumarsingh6395@gmail.com" target="_blank" class="founder-link"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CDN IMPORTS FOR 3D RENDER ENGINE -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="viewport3d.js?v=5"></script>
+
+  <!-- LIGHTWEIGHT DYNAMIC INTERACTIONS -->
+  <script>
+    // 1. Scroll animations using IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.problem-card, .bento-card, .phase-card, .m-stat-card, .funding-card, .news-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+      observer.observe(el);
+    });
+
+    // 2. 3D Parallax Hover Tilt for Glass Panels
+    document.querySelectorAll('.glass-panel').forEach(card => {
+      if (card.classList.contains('3d-viewport-panel') || card.closest('.table-wrapper')) return;
+
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const xc = rect.width / 2;
+        const yc = rect.height / 2;
+        
+        const dx = x - xc;
+        const dy = y - yc;
+        
+        const tiltX = -(dy / yc) * 8; // max 8 deg tilt
+        const tiltY = (dx / xc) * 8;
+        
+        card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-6px)`;
+        card.style.boxShadow = `0 15px 35px rgba(3, 7, 18, 0.6), 0 0 20px rgba(34, 211, 238, 0.15)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+        card.style.boxShadow = '';
+      });
+    });
+
+    // 3. Simulated System Logs Ticker
+    const logsContainer = document.getElementById('status-logs-list');
+
+    function addLog(message) {
+      const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      const logItem = document.createElement('div');
+      logItem.className = 'status-log';
+      logItem.innerHTML = `<span class="time">[${time}]</span> <span class="msg">${message}</span>`;
+      logsContainer.appendChild(logItem);
+      
+      logsContainer.scrollTop = logsContainer.scrollHeight;
+      
+      if (logsContainer.children.length > 8) {
+        logsContainer.removeChild(logsContainer.firstChild);
+      }
+    }
+
+    addLog("System Matrix initialized.");
+    addLog("Geofencing nodes verified: Gurugram Sectors.");
+    addLog("Oracle link established.");
+
+    async function fetchSystemLogs() {
+      try {
+        const response = await fetch('/api/system-status');
+        if (response.ok) {
+          const data = await response.json();
+          addLog(data.message);
+        }
+      } catch (err) {
+        console.error("Error fetching system logs:", err);
+      }
+    }
+    setInterval(fetchSystemLogs, 4500);
+
+    // 4. Dynamic Scoring Engine console simulation
+    const consoleBtn = document.getElementById('query-engine-btn');
+    const consoleRes = document.getElementById('console-result');
+    const queryUrls = ["/score/sector-29", "/score/sohna-road", "/score/dwarka-exp", "/score/golf-course-ext"];
+
+    consoleBtn.addEventListener('click', async () => {
+      consoleRes.innerText = "{ \"loading\": true }";
+      consoleRes.style.color = "var(--accent3)";
+      
+      try {
+        const randUrl = queryUrls[Math.floor(Math.random() * queryUrls.length)];
+        const sectorParam = randUrl.replace('/score/', '');
+        const response = await fetch(`/api/score?sector=${sectorParam}`);
+        if (response.ok) {
+          const data = await response.json();
+          consoleRes.innerHTML = JSON.stringify(data, null, 2);
+          consoleRes.style.color = "var(--accent)";
+        } else {
+          consoleRes.innerText = "{ \"error\": \"Failed to retrieve score\" }";
+          consoleRes.style.color = "var(--accent-red)";
+        }
+      } catch (err) {
+        consoleRes.innerText = "{ \"error\": \"Connection failed\" }";
+        consoleRes.style.color = "var(--accent-red)";
+      }
+    });
+
+    // 5. Builder SaaS simulated ledger updates
+    const builderLogsList = document.getElementById('builder-logs-list');
+    const projectNames = ["Trump Towers", "Godrej Zenith", "M3M Capital", "DLF The Aralias", "Emaar Palm Drive"];
+    const leadTypes = ["Appreciation Score query", "Yield telemetry scan", "GIS coordination check", "Smart Contract sync"];
+
+    function appendBuilderLog(hash, proj, lead) {
+      const ledgerItem = document.createElement('div');
+      ledgerItem.className = 'ledger-item';
+      ledgerItem.innerHTML = `<span class="hash">${hash}</span> <span>${proj} // ${lead}</span> <span class="status">SYNCED</span>`;
+      builderLogsList.appendChild(ledgerItem);
+      
+      builderLogsList.scrollTop = builderLogsList.scrollHeight;
+      
+      if (builderLogsList.children.length > 5) {
+        builderLogsList.removeChild(builderLogsList.firstChild);
+      }
+    }
+
+    async function fetchBuilderLedger() {
+      try {
+        const response = await fetch('/api/builder-ledger');
+        if (response.ok) {
+          const data = await response.json();
+          appendBuilderLog(data.hash, data.project, data.leadType);
+        }
+      } catch (err) {
+        console.error("Error fetching builder ledger:", err);
+      }
+    }
+
+    for (let i = 0; i < 4; i++) {
+      const hash = '0x' + Math.random().toString(16).substring(2, 8).toUpperCase();
+      const proj = projectNames[Math.floor(Math.random() * projectNames.length)];
+      const lead = leadTypes[Math.floor(Math.random() * leadTypes.length)];
+      appendBuilderLog(hash, proj, lead);
+    }
+    setInterval(fetchBuilderLedger, 5000);
+
+    // 6. Custom lagging cursor follower
+    const cursorCircle = document.createElement('div');
+    cursorCircle.className = 'cursor-follower-circle';
+    const cursorDot = document.createElement('div');
+    cursorDot.className = 'cursor-follower-dot';
+    document.body.appendChild(cursorCircle);
+    document.body.appendChild(cursorDot);
+
+    let mouseX = 0, mouseY = 0;
+    let circleX = 0, circleY = 0;
+    let dotX = 0, dotY = 0;
+
+    window.addEventListener('mousemove', e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      cursorCircle.style.opacity = '1';
+      cursorDot.style.opacity = '1';
+    });
+
+    window.addEventListener('mouseout', () => {
+      cursorCircle.style.opacity = '0';
+      cursorDot.style.opacity = '0';
+    });
+
+    function updateCursor() {
+      circleX += (mouseX - circleX) * 0.15;
+      circleY += (mouseY - circleY) * 0.15;
+      
+      dotX += (mouseX - dotX) * 0.3;
+      dotY += (mouseY - dotY) * 0.3;
+
+      cursorCircle.style.transform = `translate(${circleX}px, ${circleY}px)`;
+      cursorDot.style.transform = `translate(${dotX}px, ${dotY}px)`;
+
+      requestAnimationFrame(updateCursor);
+    }
+    updateCursor();
+
+    document.querySelectorAll('a, button, .glass-panel, input, textarea').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursorCircle.style.width = '48px';
+        cursorCircle.style.height = '48px';
+        cursorCircle.style.borderColor = 'var(--accent2)';
+        cursorCircle.style.backgroundColor = 'rgba(99, 102, 241, 0.08)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursorCircle.style.width = '32px';
+        cursorCircle.style.height = '32px';
+        cursorCircle.style.borderColor = 'var(--accent)';
+        cursorCircle.style.backgroundColor = 'transparent';
+      });
+    });
+
+    // 7. Waitlist Form Submissions
+    async function submitWaitlist(email) {
+      try {
+        const response = await fetch('/api/waitlist', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email })
+        });
+        const data = await response.json();
+        if (response.ok) {
+          alert(data.message || 'Successfully joined waitlist!');
+        } else {
+          alert(data.error || 'Failed to join waitlist.');
+        }
+      } catch (err) {
+        alert('Network error connecting to waitlist server.');
+      }
+    }
+
+    const waitlistFormNode = document.getElementById('waitlist-form-node');
+    if (waitlistFormNode) {
+      waitlistFormNode.addEventListener('submit', e => {
+        e.preventDefault();
+        const email = document.getElementById('waitlist-email-input').value;
+        submitWaitlist(email);
+        waitlistFormNode.reset();
+      });
+    }
+
+    // 8. Founders Connect Modal Operations
+    const foundersModal = document.getElementById('founders-modal');
+    const connectFoundersBtn = document.getElementById('connect-founders-btn');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const connectFoundersForm = document.getElementById('connect-founders-form');
+    const connectFoundersSuccess = document.getElementById('connect-founders-success');
+    const successCloseBtn = document.getElementById('success-close-btn');
+
+    function openModal() {
+      foundersModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      foundersModal.classList.remove('active');
+      document.body.style.overflow = '';
+      // Reset form view after close animation completes
+      setTimeout(() => {
+        if (connectFoundersForm && connectFoundersSuccess) {
+          connectFoundersForm.style.display = 'flex';
+          connectFoundersSuccess.style.display = 'none';
+          connectFoundersForm.reset();
+        }
+      }, 400);
+    }
+
+    if (connectFoundersBtn) {
+      connectFoundersBtn.addEventListener('click', openModal);
+    }
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener('click', closeModal);
+    }
+
+    // Close modal on click outside content
+    foundersModal.addEventListener('click', e => {
+      if (e.target === foundersModal) {
+        closeModal();
+      }
+    });
+
+    // Form submission to backend API
+    if (connectFoundersForm) {
+      connectFoundersForm.addEventListener('submit', async e => {
+        e.preventDefault();
+        
+        const name = document.getElementById('founder-name-input').value;
+        const email = document.getElementById('founder-email-input').value;
+        const message = document.getElementById('founder-message-input').value;
+        
+        try {
+          const response = await fetch('/api/connect-founders', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, message })
+          });
+          const data = await response.json();
+          
+          if (response.ok) {
+            connectFoundersForm.style.display = 'none';
+            connectFoundersSuccess.style.display = 'flex';
+          } else {
+            alert(data.error || 'Failed to send message to founders.');
+          }
+        } catch (err) {
+          alert('Network error connecting to platform.');
+        }
+      });
+    }
+
+    if (successCloseBtn) {
+      successCloseBtn.addEventListener('click', closeModal);
+    }
+
+    // Connect cursor hover to the close buttons and fields inside modal dynamically
+    function setupModalCursorHover() {
+      document.querySelectorAll('#founders-modal input, #founders-modal textarea, #founders-modal button, #founders-modal a').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          cursorCircle.style.width = '48px';
+          cursorCircle.style.height = '48px';
+          cursorCircle.style.borderColor = 'var(--accent2)';
+          cursorCircle.style.backgroundColor = 'rgba(99, 102, 241, 0.08)';
+        });
+        el.addEventListener('mouseleave', () => {
+          cursorCircle.style.width = '32px';
+          cursorCircle.style.height = '32px';
+          cursorCircle.style.borderColor = 'var(--accent)';
+          cursorCircle.style.backgroundColor = 'transparent';
+        });
+      });
+    }
+    setupModalCursorHover();
+
+    // Copy email to clipboard helper
+    function copyEmailToClipboard(email, element) {
+      navigator.clipboard.writeText(email).then(() => {
+        const originalHTML = element.innerHTML;
+        element.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
+        element.style.borderColor = "#10b981";
+        element.style.color = "#10b981";
+        
+        setTimeout(() => {
+          element.innerHTML = originalHTML;
+          element.style.borderColor = "";
+          element.style.color = "";
+        }, 2000);
+      }).catch(err => {
+        console.error("Failed to copy email: ", err);
+      });
+    }
+
+    // 9. Live Google News Intel Feed Integration
+    async function loadLiveNews() {
+      const newsGrid = document.querySelector('.news-grid');
+      if (!newsGrid) return;
+      
+      try {
+        const response = await fetch('/api/news');
+        if (!response.ok) throw new Error('API response failed');
+        const data = await response.json();
+        
+        if (data.news && data.news.length > 0) {
+          // Clear current static cards
+          newsGrid.innerHTML = '';
+          
+          data.news.forEach(item => {
+            let img = 'news_luxury.png';
+            let tagClass = 'trends-tag';
+            let tagLabel = 'Market Trends';
+            
+            if (item.category === 'infrastructure') {
+              img = 'news_dwarka.png';
+              tagClass = 'infra-tag';
+              tagLabel = 'Infrastructure';
+            } else if (item.category === 'policy') {
+              img = 'news_reit.png';
+              tagClass = 'policy-tag';
+              tagLabel = 'Policy & Finance';
+            }
+            
+            const card = document.createElement('div');
+            card.className = 'glass-panel news-card';
+            card.setAttribute('data-category', item.category);
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+            
+            card.innerHTML = `
+              <div class="news-img-container">
+                <img src="${img}" alt="${item.title}" class="news-img">
+                <span class="news-tag ${tagClass}">${tagLabel}</span>
+              </div>
+              <div class="news-content-wrap">
+                <div class="news-meta">
+                  <span><i class="fa-regular fa-calendar"></i> ${item.pubDate}</span>
+                  <span><i class="fa-solid fa-square-rss"></i> ${item.source}</span>
+                </div>
+                <h4>${item.title}</h4>
+                <p>Latest updates and analysis on Indian real estate developments from ${item.source}.</p>
+                <a href="${item.link}" target="_blank" class="news-link">Read Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            `;
+            
+            newsGrid.appendChild(card);
+          });
+          
+          // Re-initialize hover cursor and tilt triggers for dynamically added elements
+          setupDynamicNewsInteractions();
+        }
+      } catch (err) {
+        console.warn('Using static fallback news. Live news could not be loaded:', err);
+      }
+    }
+
+    function setupDynamicNewsInteractions() {
+      // 1. Tilt effects for new cards
+      document.querySelectorAll('.news-card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const xc = rect.width / 2;
+          const yc = rect.height / 2;
+          const dx = x - xc;
+          const dy = y - yc;
+          const tiltX = -(dy / yc) * 8;
+          const tiltY = (dx / xc) * 8;
+          
+          card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-6px)`;
+          card.style.boxShadow = `0 15px 35px rgba(3, 7, 18, 0.6), 0 0 20px rgba(34, 211, 238, 0.15)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+          card.style.boxShadow = '';
+        });
+      });
+
+      // 2. Custom cursor follower reactions
+      const follower = document.querySelector('.cursor-follower-circle');
+      if (follower) {
+        document.querySelectorAll('.news-card, .news-link').forEach(el => {
+          el.addEventListener('mouseenter', () => {
+            follower.style.width = '48px';
+            follower.style.height = '48px';
+            follower.style.borderColor = 'var(--accent2)';
+            follower.style.backgroundColor = 'rgba(99, 102, 241, 0.08)';
+          });
+          el.addEventListener('mouseleave', () => {
+            follower.style.width = '32px';
+            follower.style.height = '32px';
+            follower.style.borderColor = 'var(--accent)';
+            follower.style.backgroundColor = 'transparent';
+          });
+        });
+      }
+    }
+
+    // 10. News Section Filtering Logic
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+        const newsCards = document.querySelectorAll('.news-card');
+
+        newsCards.forEach(card => {
+          if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+            card.style.display = 'flex';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0) scale(1)';
+            }, 50);
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px) scale(0.95)';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // Run on startup and auto-update news every 10 minutes in the background
+    loadLiveNews();
+    setInterval(loadLiveNews, 600000);
+  </script>
+</body>
+</html>
