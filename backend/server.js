@@ -8,8 +8,8 @@ const SUBSCRIBERS_PATH = path.join(__dirname, 'subscribers.json');
 
 // Middleware
 app.use(express.json());
-// Serve static files from the frontend directory
-app.use(express.static(path.join(__dirname, '../frontend')));
+// Serve static files from the root directory
+app.use(express.static(path.join(__dirname, '..')));
 
 const CONFIG_PATH = path.join(__dirname, 'config.json');
 
@@ -348,7 +348,7 @@ app.get('/api/news', async (req, res) => {
 
 // Fallback to index.html for any other route
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/index.html'));
+  res.sendFile(path.join(__dirname, '../index.html'));
 });
 
 // Start Server
