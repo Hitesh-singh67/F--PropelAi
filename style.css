@@ -149,26 +149,18 @@ nav {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-family: var(--font-title);
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: var(--text);
   text-decoration: none;
-  letter-spacing: -0.5px;
 }
 
-.logo-mark {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
-  color: #030712;
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  font-size: 0.9rem;
+.logo-img {
+  height: 38px;
+  width: auto;
+  display: block;
+  transition: var(--transition);
+}
+
+.logo-img:hover {
+  transform: scale(1.03);
 }
 
 .nav-links {
